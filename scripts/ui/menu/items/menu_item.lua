@@ -20,7 +20,7 @@ end
 function MenuItem:on_click()
 end
 
-function MenuItem:on_set()
+function MenuItem:on_set(is_back)
 end
 
 return MenuItem

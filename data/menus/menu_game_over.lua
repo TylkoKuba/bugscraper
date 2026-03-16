@@ -13,7 +13,7 @@ local PROMPTS_GAME_OVER     = menu_util.PROMPTS_GAME_OVER
 local game_over_items       = {
     { "" },
     { "" },
-    { StatsMenuItem, Text:parse("💀 {menu.game_over.kills}"), function(self)
+    { StatsMenuItem, Text:parse("⚔️ {menu.game_over.kills}"), function(self)
         return
         game.stats.kills
     end },
@@ -172,8 +172,8 @@ function GameOverMenu:update(dt)
     end
 end
 
-function GameOverMenu:on_set()
-    GameOverMenu.super.on_set(self)
+function GameOverMenu:on_set(is_back)
+    GameOverMenu.super.on_set(self, is_back)
 
     if Options:get("convention_mode") then
         self.auto_restart_timer:start()

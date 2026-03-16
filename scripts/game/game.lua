@@ -136,6 +136,9 @@ function Game:init()
 
 	self.join_cooldown_frames = 0
 
+	self.stat_total_time = Stats:get("total_time")
+	self.stat_ingame_time = Stats:get("ingame_time")
+
 	self.debug_mode = DEBUG_MODE
 end
 
@@ -414,6 +417,14 @@ function Game:update(dt)
 
 	self.join_cooldown_frames = math.max(0, self.join_cooldown_frames - 1)
 
+	local old_total_time = self.stat_total_time
+	self.stat_total_time = self.stat_total_time + dt
+	Stats:set("total_time", self.stat_total_time, true)
+	if (old_total_time % STATS_AUTOSAVE_INTERVAL) > STATS_AUTOSAVE_INTERVAL/2 and (self.stat_total_time % STATS_AUTOSAVE_INTERVAL) < STATS_AUTOSAVE_INTERVAL/2 then
+		print_debug("SAVING")
+		Stats:save_progress()
+	end
+
 	-- THIS SHOULD BE LAST
 	Input:update_last_input_state(dt)
 end
@@ -431,6 +442,9 @@ function Game:update_main_game(dt)
 
 	if self.game_state == GAME_STATE_PLAYING then
 		self.time = self.time + dt
+		
+		self.stat_ingame_time = self.stat_ingame_time + dt
+		Stats:set("ingame_time", self.stat_ingame_time, true)
 	end
 	self.t = self.t + dt
 
@@ -905,6 +919,7 @@ function Game:save_stats()
 	Stats:add("deaths", self.deaths)
 	Stats:add("kills", self.kills)	
 	Stats:set("max_combo", max(Stats:get("max_combo"), self.level.max_fury_combo))	
+	Stats:set("best_run", max(Stats:get("best_run"), self.level.floor))	
 end
 
 function Game:game_over()

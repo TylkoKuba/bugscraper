@@ -70,8 +70,8 @@ function NewXpRewardMenu:draw()
 	print_wavy_centered_outline_text(self.color_palette[1], COL_BLACK, self.text, CANVAS_WIDTH/2, CANVAS_HEIGHT/2 + 42,     1, self.t, 3, 5, 0.4, 0, 2)
 end
 
-function NewXpRewardMenu:on_set()
-    NewXpRewardMenu.super.on_set(self)
+function NewXpRewardMenu:on_set(is_back)
+    NewXpRewardMenu.super.on_set(self, is_back)
 
     self.starburst_scale = 0
 end

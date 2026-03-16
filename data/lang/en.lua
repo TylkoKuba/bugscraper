@@ -347,6 +347,7 @@ return {
             time_total = "Time played (total)",
             time_ingame = "Time played (in game)",
             runs = "Runs",
+            best_run = "Best floor reached", -- The biggest floor reached on any run
         },
         new_reward = {
             new_skin = "New character!",

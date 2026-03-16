@@ -95,6 +95,8 @@ function Menu:on_set(is_back)
 		end
 		item.is_selected = false
 	end
+
+	self:set_scroll_position(self.def_y)
 end
 
 function Menu:on_unset()
@@ -105,6 +107,11 @@ end
 
 function Menu:set_target_scroll_position(value)
 	self.target_scroll_position = clamp(value, -self.padding_y, self.height - CANVAS_HEIGHT + self.padding_y)
+end
+
+function Menu:set_scroll_position(value)
+	self:set_target_scroll_position(value)
+	self.scroll_position = self.target_scroll_position
 end
 
 function Menu:draw_prompts()

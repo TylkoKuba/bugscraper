@@ -15,8 +15,8 @@ function DebugCommandMenu:init(game)
 	self:init_menu()
 end
 
-function DebugCommandMenu:on_set()
-	DebugCommandMenu.super.on_set(self)
+function DebugCommandMenu:on_set(is_back)
+	DebugCommandMenu.super.on_set(self, is_back)
 
 	Input:set_standby_mode(true)
 	self:init_menu()

@@ -17,6 +17,7 @@ function StatsManager:init()
         deaths = 0,
         kills = 0,
         max_combo = 0,
+        best_run = 0,
 
         runs_floor = { -1 },
         runs_time = { -1 },

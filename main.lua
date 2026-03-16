@@ -164,6 +164,7 @@ function quit_game(restart)
 	print("Quitting game")
 	if Options then   Options:on_quit()   end
 	if Input then     Input:on_quit()   end
+	if Files then     Input:on_quit()   end
 	love.event.quit(ternary(restart, "restart", nil))
 end
 

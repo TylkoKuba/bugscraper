@@ -173,7 +173,7 @@ function TextMenuItem:after_click()
 end
 
 function TextMenuItem:on_set(is_back)
-	TextMenuItem.super.on_set(self)
+	TextMenuItem.super.on_set(self, is_back)
 
 	self.oy = 0
 	if is_back then

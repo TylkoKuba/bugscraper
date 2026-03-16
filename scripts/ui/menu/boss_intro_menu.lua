@@ -20,8 +20,8 @@ function BossIntroMenu:init(game, bg_color, title, sound, layers)
 	self:init_boss_intro()
 end
 
-function BossIntroMenu:on_set()
-	BossIntroMenu.super.on_set(self)
+function BossIntroMenu:on_set(is_back)
+	BossIntroMenu.super.on_set(self, is_back)
 	Audio:play(self.sound)
 	self:init_boss_intro()
 end

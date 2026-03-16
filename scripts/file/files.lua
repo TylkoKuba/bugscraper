@@ -4,9 +4,14 @@ local Class = require "scripts.meta.class"
 local Files = Class:inherit()
 
 function Files:init()
-    
+    self.files = {}
 end
 
+function Files:on_quit()
+    for _, file in pairs(self.files) do
+        file:close()
+    end
+end
 
 function Files:parse_value(str_value, reference_value)
     local val
@@ -95,9 +100,20 @@ function Files:read_line(line, reference, path)
 end
 
 
+function Files:get_write_file(path) 
+    -- If we write once into a file, it's likely that we'll need it later on too 
+    if self.files[path] then
+        return self.files[path]
+    end
+    local file = love.filesystem.openFile(path, "w")
+    return file
+    
+end
+
 function Files:write_config_file(path, values) 
     -- Does not support writing the ":" character as it is used as separator. Good enough for now, implement escaping if needed.
-    local file = love.filesystem.openFile(path, "w")
+
+    local file = self:get_write_file(path)
 
     if not values["$version"] then
         print(concat("Files:write_config_file - no '$version' field defined, assuming version 1"))
@@ -115,8 +131,6 @@ function Files:write_config_file(path, values)
             local success, errmsg = file:write(concat(key, ":", string_val, "\n"))
         end
 	end
-	
-	file:close()
 end
 
 return Files

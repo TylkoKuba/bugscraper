@@ -40,8 +40,8 @@ function AchievementMenuItem:update(dt)
 	end
 end
 
-function AchievementMenuItem:on_set()
-	AchievementMenuItem.super.on_set(self)
+function AchievementMenuItem:on_set(is_back)
+	AchievementMenuItem.super.on_set(self, is_back)
 
 	self.granted = Achievements:is_achievement_granted(self.achievement_id)
 end

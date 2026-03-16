@@ -29,8 +29,8 @@ function ProgressBarMenuItem:init(i, x, y, params)
 	self.text = "azert"
 end
 
-function ProgressBarMenuItem:on_set()
-	ProgressBarMenuItem.super.on_set(self)
+function ProgressBarMenuItem:on_set(is_back)
+	ProgressBarMenuItem.super.on_set(self, is_back)
 	self.init_value(self)
 end
 

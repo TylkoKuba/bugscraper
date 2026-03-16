@@ -15,6 +15,11 @@ end
 
 --------------------------------------------- 
 
+-- Saves
+STATS_AUTOSAVE_INTERVAL = 15
+
+--------------------------------------------- 
+
 -- Graphics
 CANVAS_WIDTH = 480
 CANVAS_HEIGHT = 270
@@ -129,7 +134,7 @@ FONT_CHARACTERS =
     "ПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяё€"
 FONT_SYMBOLS_CHARACTERS = 
     "🔊🔉🔈🎵🎼🔳🔲📺🕐↖🛜▶⏸✓🔄🔘⬅➡⬆⬇⏏🔫🔚📥👆🔙🗄⌨🎮🎚❤"..
-    "✅❎🔗💡⚠🕹🫨💧🐜🐛🐝🪲🈶🌄🛅😎😈🐦𝕏🦋🐰🐞🌐⏭🥚🥦🐧🎓🔺🦂💀⏰🔥⭐🍊🏆"
+    "✅❎🔗💡⚠🕹🫨💧🐜🐛🐝🪲🈶🌄🛅😎😈🐦𝕏🦋🐰🐞🌐⏭🥚🥦🐧🎓🔺🦂💀⏰🔥⭐🍊🏆⎘⚔️"
 FONT_7SEG_CHARACTERS = " 0123456789-abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 FONT_MINI_CHARACTERS = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz{|}~ÀÁÂÃÄÅĄÆÇĆÈÉÊËĘÌÍÎÏŁÐÑŃÒÓÔÕÖØÙÚÛÜŚÝŹŻÞßàáâãäåąæçćèéêëęìíîïłðñńòóôõöøùúûüśýþÿźżŒœ⁍🦋𝕏"
 FONT_FAT_CHARACTERS = " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!,.:;'\"@#$%^&*()[]{}_-=+<>/\\|~"

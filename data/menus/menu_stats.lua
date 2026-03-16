@@ -26,7 +26,7 @@ function StatsMenu:init(game)
             { StatsMenuItem, Text:parse("⏰ {menu.stats.runs}"), function(self)
                 return Stats:get("runs")
             end },
-            { StatsMenuItem, Text:parse("💀 {menu.game_over.kills}"), function(self)
+            { StatsMenuItem, Text:parse("⚔️ {menu.game_over.kills}"), function(self)
                 return Stats:get("kills")
             end },
             { StatsMenuItem, Text:parse("💀 {menu.game_over.deaths}"), function(self)
@@ -34,6 +34,9 @@ function StatsMenu:init(game)
             end },
             { StatsMenuItem, Text:parse("🔥 {menu.game_over.max_combo}"), function(self) 
                 return Stats:get("max_combo") 
+            end },
+            { StatsMenuItem, Text:parse("⭐ {menu.stats.best_run}"), function(self) 
+                return Stats:get("best_run") 
             end },
             { "" },
             { ProgressBarMenuItem,
@@ -64,8 +67,8 @@ function StatsMenu:update(dt)
     StatsMenu.super.update(self, dt)
 end
 
-function StatsMenu:on_set()
-    StatsMenu.super.on_set(self)
+function StatsMenu:on_set(is_back)
+    StatsMenu.super.on_set(self, is_back)
 end
 
 return StatsMenu:new()
