@@ -19,6 +19,7 @@ function AchievementMenuItem:init(i, x, y, achievement)
 	self.achievement_id = achievement.name
 	self.image = images[achievement.image]
 
+	self.is_title_secret = achievement.is_title_secret
 	self.is_secret = achievement.is_secret
 	self.granted = Achievements:is_achievement_granted(self.achievement_id)
 end
@@ -30,6 +31,9 @@ function AchievementMenuItem:update(dt)
 	if self.achievement.is_secret and not self.granted then
 		self:set_label_text("???")
 		self.description = Text:parse("???")
+	elseif self.achievement.is_title_secret and not self.granted then
+		self:set_label_text("???")
+		self.description = Text:parse("{achievements."..self.achievement.name..".description}")
 	else
 		self:set_label_text("{achievements."..self.achievement.name..".name}")
 		self.description = Text:parse("{achievements."..self.achievement.name..".description}")
@@ -66,7 +70,7 @@ function AchievementMenuItem:draw_text()
 		
 	else
 		rect_color(COL_BLACK_BLUE, "fill", x-1, y-1, 34, 34)
-		if self.is_secret then
+		if self.is_secret or self.is_title_secret then
 			love.graphics.draw(images.ach_secret, x, y)
 		else
 			exec_using_shader(
@@ -83,8 +87,6 @@ end
 
 function AchievementMenuItem:on_click()
 	AchievementMenuItem.super.on_click()
-
-	Achievements:grant(self.achievement_id)
 end
 
 

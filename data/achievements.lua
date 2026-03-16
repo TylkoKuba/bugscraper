@@ -9,21 +9,21 @@ return {
         image = "ach_complete_w2",
         steam_id = "ACH_COMPLETE_W2",
 
-        is_secret = true
+        is_title_secret = true
     },
     {
         name = "ach_complete_w3",
         image = "ach_complete_w3",
         steam_id = "ACH_COMPLETE_W3",
 
-        is_secret = true
+        is_title_secret = true
     },
     {
         name = "ach_complete_w4",
         image = "ach_complete_w4",
         steam_id = "ACH_COMPLETE_W4",
 
-        is_secret = true
+        is_title_secret = true
     },
     {
         name = "ach_complete_end",
