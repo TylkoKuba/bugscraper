@@ -8,7 +8,7 @@ local function init()
     print("Build type: "..tostring(BUILD_TYPE))
     print("")
 
-    if PROFILE_INIT then
+    if PROFILER_INIT then
         love.profiler = require "lib.profiler.profile"
         love.profiler.start()
     end
@@ -62,7 +62,7 @@ local function init()
     love.graphics.present()
     love.graphics.origin()
 
-    if PROFILE_INIT then
+    if PROFILER_INIT then
         print("")
         print("---[[ LOAD PROFILER REPORT ]]---")
         print(love.profiler.report(20))
