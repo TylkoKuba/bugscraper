@@ -1456,7 +1456,7 @@ local waves = parse_waves_table {
         bounds = RECT_CEO_OFFICE,
         backroom = BackroomCEOOffice,
 
-        achievements = {"ach_complete_w2"},
+        achievements = {"ach_complete_w4"},
     },
 
     ----------------------------------------------------------------------------------------------------------
