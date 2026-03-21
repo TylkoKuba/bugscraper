@@ -484,6 +484,10 @@ return Cutscene:new("ceo_escape_w5", {
         duration = 0,
         enter = function(cutscene, data)
             Achievements:grant("ach_complete_end")
+            if game.level.last_damage_wave == 0 then
+                Achievements:grant("ach_no_damage_full")
+            end
+
             game:new_game({ 
                 backroom = BackroomCredits:new(),
                 iris_params = {0, 0, 0, 0, 0}
