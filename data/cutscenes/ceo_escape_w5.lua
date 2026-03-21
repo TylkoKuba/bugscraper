@@ -488,10 +488,8 @@ return Cutscene:new("ceo_escape_w5", {
                 Achievements:grant("ach_no_damage_full")
             end
 
-            game:new_game({ 
-                backroom = BackroomCredits:new(),
-                iris_params = {0, 0, 0, 0, 0}
-            })
+            game:save_stats()
+        	game.menu_manager:set_menu("win")
         end,
     }),
 })
