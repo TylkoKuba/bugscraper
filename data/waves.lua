@@ -1422,6 +1422,7 @@ local waves = parse_waves_table {
         },
 
         run = function(self, level)
+            game.actor_manager:kill_actors_with_name("progressing_arc")
         end,
 
         background = backgrounds.BackgroundGreenhouse:new(),
