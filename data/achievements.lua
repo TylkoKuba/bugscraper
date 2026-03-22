@@ -46,6 +46,11 @@ return {
         steam_id = "ACH_ALL_SKINS",
     },
     {
+        name = "ach_max_hearts",
+        image = "ach_max_hearts",
+        steam_id = "ACH_MAX_HEARTS",
+    },
+    {
         name = "ach_no_damage_easy",
         image = "ach_no_damage_easy",
         steam_id = "ACH_NO_DAMAGE_EASY",

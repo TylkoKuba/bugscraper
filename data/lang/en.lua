@@ -366,8 +366,8 @@ return {
         },
         credits = {
             title = "CREDITS",
-            ninesliced_presents = "Ninesliced presents", -- Written EXCATLY "Ninesliced"
-            game_by = "A game by", -- As in, "A game by [newline] John". If it is not possible to have the name *after* this, one idea could be to translate as "Creator" (as in, "Creator [newline] John")
+            ninesliced_presents = "Ninesliced presents",
+            game_by = "A game by", 
             leo_bernard = "Léo Bernard", -- Please do not touch this
             music = "Music",
             sound_design = "Sound design",
@@ -421,6 +421,10 @@ return {
         ach_all_skins = {
             name = "Team Leader",
             description = "Unlock all characters",
+        },
+        ach_max_hearts = {
+            name = "Lover",
+            description = "Obtain 7 ❤",
         },
         ach_no_damage_easy = {
             name = "Iron Bug",
