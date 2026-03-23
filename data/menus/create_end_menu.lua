@@ -161,7 +161,18 @@ local function create_items(is_win)
 
     if BUILD_TYPE == "demo" then
         table.insert(items,
-            { "❤ {menu.win.wishlist} 🔗", func_url("steam://advertise/2957130/") }
+            { "❤ {menu.win.wishlist} 🔗",
+                function(item)
+                    if game.has_finished_game_over_animation then
+                        game.has_seen_controller_warning = true
+                        love.system.openURL("steam://advertise/2957130/")
+                    end
+                end,
+                function(item)
+                    item.is_selectable = game.has_finished_game_over_animation
+                    item.is_visible = not Options:get("convention_mode")
+                end
+            }
         )
     end
 

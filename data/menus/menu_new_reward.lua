@@ -31,6 +31,7 @@ function NewXpRewardMenu:init(game)
     self.center_image = images.empty
     self.overtext = ""
     self.undertext = ""
+    self.credits_text = ""
     self.text = ""
 end
 
@@ -64,10 +65,12 @@ function NewXpRewardMenu:draw()
 
     print_wavy_centered_outline_text(COL_WHITE, nil, self.overtext, CANVAS_WIDTH/2, CANVAS_HEIGHT/2 - 50, 1, self.t, 2, 5, 0.4, 0, 1)
     print_wavy_centered_outline_text(COL_WHITE, nil, self.undertext, CANVAS_WIDTH/2, CANVAS_HEIGHT/2 + 70, 1, self.t, 2, 5, 0.4, 0, 1)
+
 	print_wavy_centered_outline_text(self.color_palette[2], COL_WHITE, self.text, CANVAS_WIDTH/2, CANVAS_HEIGHT/2 + 42 + 3, 1, self.t, 3, 5, 0.4, 0, 2)
 	print_wavy_centered_outline_text(self.color_palette[1], COL_WHITE, self.text, CANVAS_WIDTH/2, CANVAS_HEIGHT/2 + 42,     1, self.t, 3, 5, 0.4, 0, 2)
 	print_wavy_centered_outline_text(self.color_palette[2], COL_BLACK, self.text, CANVAS_WIDTH/2, CANVAS_HEIGHT/2 + 42 + 3, 1, self.t, 3, 5, 0.4, 0, 2)
 	print_wavy_centered_outline_text(self.color_palette[1], COL_BLACK, self.text, CANVAS_WIDTH/2, CANVAS_HEIGHT/2 + 42,     1, self.t, 3, 5, 0.4, 0, 2)
+
 end
 
 function NewXpRewardMenu:on_set(is_back)
@@ -95,7 +98,7 @@ function NewXpRewardMenu:set_reward_graphics(reward)
         self.text = Text:text("player.name." .. skin.text_key)
         self.center_image = skin.img_walk_down
         self.color_palette = skin.color_palette
-        self.undertext = ""
+        self.undertext = skin.guest_source or ""
 
     elseif reward.type == "upgrade" then
         local upgrade = upgrades[reward.upgrade]
