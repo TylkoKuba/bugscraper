@@ -391,19 +391,19 @@ return {
     },
     achievements = {
         ach_complete_w1 = {
-            name = "[[ADDED / 'Bug Resources']]",
+            name = "Recursos de Depuracionces", 
             description = "[[ADDED / 'Complete department 1']]",
         },
         ach_complete_w2 = {
-            name = "[[ADDED / 'Factory']]",
+            name = "Fábrica",
             description = "[[ADDED / 'Complete department 2']]",
         },
         ach_complete_w3 = {
-            name = "[[ADDED / 'Server Room']]",
+            name = "Servidores",
             description = "[[ADDED / 'Complete department 3']]",
         },
         ach_complete_w4 = {
-            name = "[[ADDED / 'Gardens']]",
+            name = "Jardines",
             description = "[[ADDED / 'Complete department 4']]",
         },
         ach_complete_end = {
