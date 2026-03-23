@@ -26,14 +26,14 @@ return {
         ja = "日本語",
     },
     game = {
-        demo = "DEMO",  -- Chip added to the game logo to indicate that this version is a demo
+        demo = "DEMO", -- Chip added to the game logo to indicate that this version is a demo
         fps = "%d FPS",
         congratulations = "GRATULACJE!",
         win_thanks = "Dziękujemy za zagranie w werje demo",
-        win_wishlist = "Dodaj grę do listy życzeń na Steam :)",  -- "Wishlist" is a verb
+        win_wishlist = "Dodaj grę do listy życzeń na Steam :)", -- "Wishlist" is a verb
         warning_web_controller = "Niektóre przeglądarki mogą nie obsługiwać kontrolerów",
 
-        combo = "COMBO %d",
+        combo = "COMBO %d", 
     },
     level = {
         world_prefix = "Dział %s",
@@ -43,7 +43,7 @@ return {
 
         -- Dept 1: This can be any vaguely office-y name (I just chose this in english because of the word play), 
         -- because this department just represents a generic office department.
-        world_1 = "Korporobale",
+        world_1 = "Korporobale", 
         -- Dept 2: This department is a factory themed after bees, with grungy metallic environment
         world_2 = "Pasieka Metalu",
         -- Dept 3: This is a moody, dark and mysterious room filled with endless racks of servers 
@@ -56,7 +56,7 @@ return {
     },
     gun = {
         -- Gun names
-        -- You can stay close to the original, but please feel free to have a more creative interpretation if you wish!
+        -- You can be more creative with these, you don't have to stay close to the originals.
         -- Look at google doc for image references
         machinegun = "Grosznik",        -- hard to translate to english, kinda a mix beween pea and gun
         triple = "Paprypak",            -- it's a mix of two words pepper and pack the idea is that peppers are commonly sold in packs so it's a pack of peppers
@@ -81,12 +81,12 @@ return {
             amb = "Amb",
 
             -- These are guest characters from other games so please stay close to the original.
-            rico = "Rico",  -- From 'The Bullet Hopper'
-            yv = "M.W.",  -- From 'Nuclear Throne' / See localized names here: https://docs.google.com/spreadsheets/d/18N1CNxIzSUm4CkIWUw0nbRnlxzAgoRbHpGyX8649Gjw/edit?usp=sharing
+            rico = "Rico", -- From 'The Bullet Hopper'
+            yv = "M.W.", -- From 'Nuclear Throne' / See localized names here: https://docs.google.com/spreadsheets/d/18N1CNxIzSUm4CkIWUw0nbRnlxzAgoRbHpGyX8649Gjw/edit?usp=sharing
             leo = "Leo",
-            dodu = "Dodu",
+            dodu = "Dodu", 
         },
-        abbreviation = "G%d",  -- Short appreviation to denote players by their number. Example: in english, "P1" means "Player 1", in french "J1" means "Joueur 1".
+        abbreviation = "G%d", -- Short appreviation to denote players by their number. Example: in english, "P1" means "Player 1", in french "J1" means "Joueur 1".
     },
     enemy = {
         -- These are the boss names. Please look at the Gdocs for reference.
@@ -100,13 +100,14 @@ return {
         boss_1 = "Pan Odchodek",
 
         -- The queen of the Factory, who's also a metal/rock singer.  
-        boss_2 = "Jej Metaliczność",
+        boss_2 = "Jej Metaliczność", 
 
         -- The guardian of the Server Room, whose design is based off a motherboard and spiders.
         boss_3 = "Rdzenny Pająk",
 
         -- A very large green cabbage-like, boulder-like, rolling enemy from the Garden area.   
-        -- You're free to be more creative with this one.
+        -- You're free to be more creative with this one. 
+        -- (example: in French, I chose "Grobroco", "gros" (large) + "broco" (diminutive of broccoli))
         boss_4 = "Zgniłogłaz",
 
         -- The CEO of the company, and the final boss. Its name is somewhat ominous-sounding.
@@ -131,7 +132,7 @@ return {
             description = "x%d limit amunicji",
         },
         soda = {
-            title = "Cola",  -- As in Coca-cola/Pepsi style soda.
+            title = "Cola", -- As in Coca-cola/Pepsi style soda.
             description = "+%d skoków w powietrzu",
         },
         fizzy_lemonade = {
@@ -144,7 +145,7 @@ return {
         },
         hot_sauce = {
             title = "Ostry Sos",
-            description = "Zadaj x%d obrażeń używając x%d amunicji",  -- First "%d" is the damage, second "%d" is ammo
+            description = "Zadaj x%d obrażeń używając x%d amunicji", -- First "%d" is the damage, second "%d" is ammo
         },
         coconut_water = {
             title = "Woda Kokosowa",
@@ -169,7 +170,7 @@ return {
             -- (i.e., "[X] Shoot", "[C] Jump", etc)
 
             -- Gameplay Actions
-            move = "Poruszanie",
+            move = "Poruszanie", 
             left = "Lewo",
             right = "Prawo",
             up = "Góra",
@@ -178,8 +179,8 @@ return {
             shoot = "Strzał",
             interact = "Interakcja",
             leave_game = "Wyjdź",
-            open = "Otwórz",          -- As in, "open menu", and NOT for, say, opening chests.
-            collect = "Podnieś",    -- As in, "collect item", "collect gun", etc
+            open = "Otwórz",         -- As in, "open menu", and NOT for, say, opening chests.
+            collect = "Podnieś",   -- As in, "collect item", "collect gun", etc
 
             -- UI Actions
             ui_left = "Lewo (Menu)",
@@ -189,21 +190,21 @@ return {
             ui_select = "Zatwierdź",
             ui_back = "Wstecz",
             pause = "Pauza",
-            join = "Dołącz",  -- As, in joining the game, adding a new player to the game.
+            join = "Dołącz", -- As, in joining the game, adding a new player to the game.
             -- As in, "Press [key] to split the keyboard". 
             -- Shown on the title screen when one keyboard player has joined. 
             -- Try to keep it as short as possible since space is limited there.
-            split_keyboard = "Podziel klawiature",
+            split_keyboard = "Podziel klawiature", 
 
             wall_jump = "Skok od ściany",
-            jetpack = "Plecak Odrzutowy",  -- Refers to "jetpacking", a move in the game performed by shooting downwards with a gun.
+            jetpack = "Plecak Odrzutowy", -- Refers to "jetpacking", a move in the game performed by shooting downwards with a gun.
         },
     },
     menu = {
         see_more = "zobacz wiecej...",
         yes = "TAK",
         no = "NIE",
-        leave_menu = "Opuścić menu?",  -- Generic "leave menu?"
+        leave_menu = "Opuścić menu?", -- Generic "leave menu?"
         quit = {
             description = "Czy aby napewno chcesz wyjść?"
         },
@@ -218,7 +219,7 @@ return {
             -- This correspons to floor 0 in the game. To different cultures, the "ground floor" 
             -- might usually mean "floor 1", so please make sure to avoid ambiguity when translating. 
             -- (You can also translate as "main lobby" or something like it.)   
-            return_to_ground_floor = "WRÓĆ DO LOBBY",
+            return_to_ground_floor = "WRÓĆ DO LOBBY", 
             options = "OPCJE",
             credits = "TWÓRCY",
             feedback = "ZOSTAW OPINIE",
@@ -237,7 +238,7 @@ return {
             input_submenu = {
                 title = "USTAWIENIA STEROWANIA",
                 reset_controls = "ZRESETUJ STEROWANIE",
-                controller_button_style = "STYL PRZYCISKÓW",  -- The style of the buttons shown in-game. As in, PS4 style buttons, Xbox style buttons...
+                controller_button_style = "STYL PRZYCISKÓW", -- The style of the buttons shown in-game. As in, PS4 style buttons, Xbox style buttons...
                 controller_button_style_value = {
                     detect = "wykryj",
                     switch = "Switch",
@@ -247,7 +248,7 @@ return {
                 },
                 deadzone = "MARTWA STREFA JOYSTICKA",
                 vibration = "WIBRACJE",
-                low_deadzone_warning = "Niskie wartości mogą powodować problemy",  -- Warning displayed when the joystick deadzone is very small
+                low_deadzone_warning = "Niskie wartości mogą powodować problemy", -- Warning displayed when the joystick deadzone is very small
                 note_deadzone = "Ustawienia martwej strefy zostaną zastosowane po opuszczeniu tego menu",
 
                 gameplay = "Rozgrywka",
@@ -257,11 +258,11 @@ return {
                 note_global_keyboard = "Te przypisania sa takie same dla wszystkich klawiatur",
                 note_global_controller = "Te przypisania sa takie same dla wszystkich kontrolerów",
                 -- Shown when navigating to player "%d"'s controller settings while no player of this number has joined yet.
-                subtitle_no_player = "[⚠ BRAK GRACZA %d]",
+                subtitle_no_player = "[⚠ BRAK GRACZA %d]", 
                 -- Shown in the controller settings while no controller is connected
-                subtitle_no_controller = "[⚠ BRAK PODŁĄCZONEGO KONTROLERA]",
+                subtitle_no_controller = "[⚠ BRAK PODŁĄCZONEGO KONTROLERA]", 
                 no_buttons = "[BRAK PRZYCISKÓW]",
-                press_button = "[WCIŚNIJ PRZYCISK]",  -- Try to keep it as short as possible
+                press_button = "[WCIŚNIJ PRZYCISK]", -- Try to keep it as short as possible
                 -- When assigning buttons, if the user presses a button that is already bound, it will instead
                 -- remove that button.
                 press_again_to_remove = "Naciśnij już przypisany przycisk, aby go usunąć", 
@@ -269,7 +270,7 @@ return {
                 keyboard = "Klawiatura",
                 keyboard_solo = "KLAWIATURA (Standard)",
                 -- "Split" as in, "the 1st split keyboard user"
-                keyboard_p1 = "KLAWIATURA (Podział 1)",
+                keyboard_p1 = "KLAWIATURA (Podział 1)", 
                 keyboard_p2 = "KLAWIATURA (Podział 2)",
 
                 controller = "Kontroler",
@@ -282,23 +283,23 @@ return {
                 title = "Dźwięk",
                 sound = "DŹWIĘK",
                 volume = "GŁOŚNOŚĆ",
-                sfx_volume = "EFEKTY DŹWIĘKOWE",  -- Can also be translated as "effects volume" or "SFX volume"
+                sfx_volume = "EFEKTY DŹWIĘKOWE", -- Can also be translated as "effects volume" or "SFX volume"
                 music_volume = "MUZYKA",
-                music_pause_menu = "MUZYKA W MENU PAUZY",  -- Whether music should play on the pause menu
+                music_pause_menu = "MUZYKA W MENU PAUZY", -- Whether music should play on the pause menu
                 ambience = "DŹWIĘKI OTOCZENIA",
             },
             visuals = {
                 title = "Elementy wizualne",
                 fullscreen = "PEŁEN EKRAN",
-                pixel_scale = "SKALA PIXELI",  -- How big should every pixel be displayed on-screen (x1, x2, ...)
+                pixel_scale = "SKALA PIXELI", -- How big should every pixel be displayed on-screen (x1, x2, ...)
                 pixel_scale_value = {
                     auto = "automatyczna",
-                    max_whole = "maksymalnie cała",  -- Biggest whole number possible
+                    max_whole = "maksymalnie cała", -- Biggest whole number possible
                 },
                 vsync = "SYNCHR. PIONOWA",
-                menu_blur = "ROZMYCIE TŁA MENU",  -- Whether to apply the blurring effect in menu backgrounds
-                background_speed = "PRĘDKOŚĆ TŁA",  -- How quickly the background scrolls 
-                bullet_lightness = "JASNOŚĆ POCISKÓW",  -- How brightly bullets are rendered
+                menu_blur = "ROZMYCIE TŁA MENU", -- Whether to apply the blurring effect in menu backgrounds
+                background_speed = "PRĘDKOŚĆ TŁA", -- How quickly the background scrolls 
+                bullet_lightness = "JASNOŚĆ POCISKÓW", -- How brightly bullets are rendered
             },
             game = {
                 title = "Gra",
@@ -306,10 +307,10 @@ return {
                 language = "JĘZYK...",
                 timer = "LICZNIK CZASU",
                 mouse_visible = "POKAŻ KURSOR",
-                pause_on_unfocus = "PAUZA PRZY UTRACIE OKNA",  -- whether the game should pause when the window loses focus
+                pause_on_unfocus = "PAUZA PRZY UTRACIE OKNA", -- whether the game should pause when the window loses focus
                 screenshake = "TRZĘSIENIE EKRANU",
-                skip_boss_intros = "POMIŃ INTRA BOSSÓW",  -- Whether the game should skip the boss intro animations 
-                show_fps_warning = "OSTRZEŻENIE O NISKIEJ LICZBIE FPS",  -- Whether the game should show a warning when its framerate is low
+                skip_boss_intros = "POMIŃ INTRA BOSSÓW", -- Whether the game should skip the boss intro animations 
+                show_fps_warning = "OSTRZEŻENIE O NISKIEJ LICZBIE FPS", -- Whether the game should show a warning when its framerate is low
 
             },
             language = {
@@ -319,6 +320,9 @@ return {
                 description = "Czy uruchomić grę ponownie, aby zastosować nowy język?",
             },
         },
+        achievements = {
+            title = "[[ADDED / 'ACHIEVEMENTS']]",
+        },
         feedback = {
             title = "ZOSTAW OPINIE",
             bugs = "ZGŁOŚ BŁĄD",
@@ -326,14 +330,23 @@ return {
         },
         game_over = {
             title = "KONIEC GRY!",
-            kills = "Zabici wrogowie",  -- The amount of enemies the player has killed
-            time = "Czas",             -- The time that the player took to complete the level
-            floor = "Piętro",           -- Which storey the player was on when they died
+            kills = "Zabici wrogowie", -- The amount of enemies the player has killed
+            deaths = "[[ADDED / 'Deaths']]",
+            time = "Czas",            -- The time that the player took to complete the level
+            floor = "Piętro",          -- Which storey the player was on when they died
             score = "Wynik",
             max_combo = "Maks combo",
 
             continue = "KONTYNUUJ",
             quick_restart = "POWTÓRZ",
+        },
+        stats = {
+            title = "[[ADDED / 'STATS']]",
+
+            time_total = "[[ADDED / 'Time played (total)']]",
+            time_ingame = "[[ADDED / 'Time played (in game)']]",
+            runs = "[[ADDED / 'Runs']]",
+            best_run = "[[ADDED / 'Best wave reached']]", -- The biggest wave number reached on any run
         },
         new_reward = {
             new_skin = "Nowa postać!",
@@ -341,20 +354,20 @@ return {
         },
         win = {
             title = "GRATULACJE!",
-            wishlist = "DODAJ DO LISTY ŻYCZEŃ NA STEAM",  -- "wishlist" is a verb
+            wishlist = "DODAJ DO LISTY ŻYCZEŃ NA STEAM", -- "wishlist" is a verb
             continue = "KONTYNUUJ",
         },
         joystick_removed = {
             title = "KONTROLER ODŁĄCZONY",
             description = "Podłącz następujące kontrolery:",
             continue = "IGNORUJ",
-            item = "Gracz %d (%s)",  -- e.g. "Player 2 (Xbox Controller)"
+            item = "Gracz %d (%s)", -- e.g. "Player 2 (Xbox Controller)"
         },
         credits = {
             title = "TWÓRCY",
-            ninesliced_presents = "Ninesliced prezentuje",  -- Written EXCATLY "Ninesliced"
-            game_by = "Gra autorstwa",  -- As in, "A game by [newline] John". If it is not possible to have the name *after* this, one idea could be to translate as "Creator" (as in, "Creator [newline] John")
-            leo_bernard = "Léo Bernard",  -- Please do not touch this
+            ninesliced_presents = "Ninesliced prezentuje",
+            game_by = "Gra autorstwa", 
+            leo_bernard = "Léo Bernard", -- Please do not touch this
             music = "Muzyka",
             sound_design = "Dźwięk",
             localization = "Lokalizacja",
@@ -363,16 +376,74 @@ return {
             special_thanks = "Specjalne podziękowania",
             trailer = "Trailer",
             asset_creators = "Autorzy zasobów",
-            tv_slideshow = "Twórcy slajdów TV",  -- Refers to the powerpoint TV slideshow on the title screen, which was contributed by a variety of people 
+            tv_slideshow = "Twórcy slajdów TV", -- Refers to the powerpoint TV slideshow on the title screen, which was contributed by a variety of people 
             licenses = "Licencje na zasoby i biblioteki",
-            more = "I wiele innych...",                         -- For the people that I might have forgotten in the special thanks section
-            thank_you_for_playing = "Dziękujemy za grę!",  -- Shown at the end of the credits
+            more = "I wiele innych...",                        -- For the people that I might have forgotten in the special thanks section
+            thank_you_for_playing = "Dziękujemy za grę!", -- Shown at the end of the credits
 
-            x_by_y = "%s przez %s",                               -- "ASSET_NAME by CREATOR". Used to credit assets such as sound effects
-            asset_item = "%s przez %s / %s",                      -- "ASSET_NAME by CREATOR / LICENCE"
+            x_by_y = "%s przez %s",                              -- "ASSET_NAME by CREATOR". Used to credit assets such as sound effects
+            asset_item = "%s przez %s / %s",                     -- "ASSET_NAME by CREATOR / LICENCE"
         },
         open_source = {
             title = "Biblioteki otwartoźródłowe",
+        },
+    },
+    achievements = {
+        ach_complete_w1 = {
+            name = "[[ADDED / 'Bug Resources']]",
+            description = "[[ADDED / 'Complete department 1']]",
+        },
+        ach_complete_w2 = {
+            name = "[[ADDED / 'Factory']]",
+            description = "[[ADDED / 'Complete department 2']]",
+        },
+        ach_complete_w3 = {
+            name = "[[ADDED / 'Server Room']]",
+            description = "[[ADDED / 'Complete department 3']]",
+        },
+        ach_complete_w4 = {
+            name = "[[ADDED / 'Gardens']]",
+            description = "[[ADDED / 'Complete department 4']]",
+        },
+        ach_complete_end = {
+            name = "[[ADDED / 'Vacations']]",
+            description = "[[ADDED / 'Complete the game']]",
+        },
+        ach_death = {
+            name = "[[ADDED / 'Perseverance']]",
+            description = "[[ADDED / 'Die 50 times']]",
+        },
+        ach_all_upgrades = {
+            name = "[[ADDED / 'A Furious Cocktail']]",
+            description = "[[ADDED / 'Unlock all upgrades']]",
+        },
+        ach_all_skins = {
+            name = "[[ADDED / 'Team Leader']]",
+            description = "[[ADDED / 'Unlock all characters']]",
+        },
+        ach_max_hearts = {
+            name = "[[ADDED / 'Lover']]",
+            description = "[[ADDED / 'Obtain 7 ❤']]",
+        },
+        ach_no_damage_easy = {
+            name = "[[ADDED / 'Iron Bug']]",
+            description = "[[ADDED / 'Do not take damage for 20 floors']]",
+        },
+        ach_no_damage_full = {
+            name = "[[ADDED / 'Golden Bug']]",
+            description = "[[ADDED / 'Do not take damage for a full game']]",
+        },
+        ach_no_floor = {
+            name = "[[ADDED / 'The Floor Is Lava']]",
+            description = "[[ADDED / 'Do not touch the ground for 10 floors']]",
+        },
+        ach_big_combo = {
+            name = "[[ADDED / 'Furious']]",
+            description = "[[ADDED / 'Get a 100 combo']]",
+        },
+        ach_smash_easter_egg = {
+            name = "[[ADDED / 'GAME!']]", -- This is a reference to what the announcer says at the end of a match in Smash Bros.
+            description = "[[ADDED / 'Obtain the secret exit animation']]", 
         },
     },
     discord = { -- Text used for Discord rich presence
